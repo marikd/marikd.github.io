@@ -1,0 +1,25 @@
+<app>
+  <app-header items={ menus } />
+  <app-main title={ props.heroTitle } />
+  <app-works items={ works } />
+  <app-notes items={ notes } />
+  <app-footer text={ props.footerText } />
+
+  <script>
+      export default {
+        menus: [
+          { title: 'WORKS', url: '#'},
+          { title: 'NOTES', url: '#'},
+          { title: 'BIOLGRAPHY', url: 'biography.html'}
+          ],
+        works: [
+          { date: '2021.07',title: '腐食／洗い流された悲しみ', url: 'work01.html', img: 'http://akirawakita.com/img/work/2020_thumb.jpg'}
+          ],
+        notes: [
+          { date: '2021.05',title: '金生山', url: '#'},
+          { date: '2021.05',title: '山の中', url: '#'},
+          { date: '2021.05',title: '連続性と断絶', url: '#'}
+          ]
+    }
+  </script>
+</app>

@@ -1,0 +1,45 @@
+<app-header>
+<h1>Mari Kudo</h1>
+<ul>
+  <li each = { item in props.items }>
+    <a href = { item.url }>{ item.title }</a>
+  </li>
+</ul>
+
+
+<style>
+  :host { /*全体設定*/
+    display : block;
+  }
+
+  h1{
+    margin: 0px;
+    display: inline-block;
+    font-size:100%;
+    float:left;
+    line-height: 2;
+    padding: 1.2em;
+  }
+  ul {
+    display: inline-block;
+    float: right;
+    list-style : none;
+    font-size: 90%;
+    padding: 0;
+    margin : 0;
+  }
+  li{
+    display: inline-block;
+    line-height: 2;
+  }
+  a{
+    color: #032030;
+    display: block;
+    padding: 1.2em;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #bbb;
+  }
+</style>
+</app-header>

@@ -1,0 +1,25 @@
+<app-footer>
+<p>Mari Kudo { props.text } - { year } ,All Rights Reserved.</p>
+
+<script>
+  export default {
+    year: (new Date()).getFullYear()
+  }
+</script>
+
+<style>
+  :host { /*全体設定*/
+    display : block;
+    align-items: flex-end;
+  }
+
+  p{
+    font-size: 70%;
+    margin: 0;
+    padding: 5rem;
+    color:  #fff;
+    background: #444;
+    text-align: center;
+  } 
+</style>
+</app-footer>

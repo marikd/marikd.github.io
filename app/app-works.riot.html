@@ -1,0 +1,57 @@
+<app-works>
+<h2>WORKS</h2>
+<ul>
+  <li each = { item in props.items }>
+    <a href = { item.url }><img src = { item.img }></a><p class="title">{ item.title }</p><p class="date">{ item.date }</p>
+  </li>
+</ul>
+
+
+<style>
+  :host { /*全体設定*/
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 4em;
+  }
+
+  h2{
+        font-size: 60%;
+        padding: 2rem 0rem 1rem 2rem;
+        float: left;
+        letter-spacing: 5px;
+        line-height: 2;
+    }
+
+  img{
+    width: 400px;
+    height: 300px;
+  }
+
+  ul {
+    display: block;
+    clear: both;
+    list-style : none;
+  }
+  li{
+    display: block;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    color: #bbb;
+  }
+  .title{
+    margin-bottom: 0px;
+  }
+  
+  .date{
+    margin-top: 0px;
+    font-size: 80%;
+    color: #bbb;
+  }
+
+</style>
+</app-works>

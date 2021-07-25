@@ -1,0 +1,45 @@
+<app-notes>
+<h2>NOTES</h2>
+<ul>
+  <li each = { item in props.items }>
+    <a href = { item.url }><span class="date">{ item.date }</span>{ item.title }</a>
+  </li>
+</ul>
+
+
+<style>
+  :host { /*全体設定*/
+    display: block;
+    padding: 1.5em; 
+    padding-bottom: 8em;
+    background: #F5F5F5;
+  } 
+
+  h2{
+        font-size: 60%;
+        padding: 4rem 0rem 0rem 2rem;
+        letter-spacing: 5px;
+        line-height: 2;
+    }
+
+ul {
+    list-style : none;
+  }
+li{
+    line-height: 1.5;
+  }
+a{
+    color: #032030;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+  }
+a:hover{
+    color: #bbb;
+  }
+.date{
+  padding-right: 20px;
+  font-size: 60%;
+}
+</style>
+</app-notes>

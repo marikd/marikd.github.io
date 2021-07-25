@@ -1,0 +1,31 @@
+<!DOCTYPE html><meta charset="utf-8" />
+<head>
+  <link rel="stylesheet" href="lib/style.css" />
+<script
+    type="text/javascript"
+    src="https://unpkg.com/riot@4.14.0/riot+compiler.min.js"
+  ></script>
+  
+</head>
+
+<body>
+  <!--head要素-->
+  <app title="Mari Kudo　｜　"{ props.heroTitle } ></app
+  ><!--ページごとにタイトルを設定する-->
+  <script src="app/app.riot.html" type="riot"></script>
+  <script src="app/app-header.riot.html" type="riot"></script>
+  　
+  <script src="app/app-main.riot.html" type="riot"></script>
+  　
+  <script src="app/app-works.riot.html" type="riot"></script>
+  <script src="app/app-notes.riot.html" type="riot"></script>
+  <script src="app/app-footer.riot.html" type="riot"></script>
+
+  <script>
+    riot.compile().then(() => {
+      riot.mount('app', {
+        heroTitle: '', //ページごとにタイトルを設定する
+      });
+    });
+  </script>
+</body>

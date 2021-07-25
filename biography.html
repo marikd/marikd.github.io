@@ -1,0 +1,92 @@
+<!DOCTYPE html><meta charset="utf-8" />
+<head>
+  <link rel="stylesheet" href="lib/style.css" />
+<script
+    type="text/javascript"
+    src="https://unpkg.com/riot@4.14.0/riot+compiler.min.js"
+  ></script>
+  
+</head>
+
+<body>
+  <!--head要素-->
+  <app title="BIOGRAPHY｜　Mari Kudo"{ props.heroTitle } ></app
+  ><!--ページごとにタイトルを設定する-->
+  <script src="app/app.riot.html" type="riot"></script>
+  <script src="app/app-header.riot.html" type="riot"></script>
+  <script src="app/app-biography.riot.html" type="riot"></script>
+
+<h2>PROFILE</h2>
+<p>工藤麻里<br />1982年山形県鶴岡市生まれ。</p>
+
+<h2>STATEMENT</h2>
+<p>「衣」を取り巻く歴史と社会状況を世界の諸問題の縮図と見なし、社会の変化と、それに対する女性および”家庭”の適応や自己規制の反応が社会に及ぼす影響を言語化・可視化する。戦後から今日までの日本社会の変化を批判的に捉え直し、女性がよりよく生きる未来の社会のデザインを試みる。</p>
+
+<h2>EXPRESSION</h2>
+<p>染・織・縫・編など繊維加工の手技、銅版画、およびコンピューターを使ったコーディング表現やデータビジュアライズ、文章を用いる。</p>
+
+<h2>CARRER</h2>
+<p>お茶の水女子大学 言語文化学科 仏語圏言語文化コース卒業。株式会社リクルート　Federation of IT 部門にてシステム開発を担当後、事業開発室にて、メディア「web　R25」を担当し退職。2015年より<a href="https://happyanalytics.co.jp">株式会社HAPPY ANALYTICS</a>にてウェブアナリスト小川卓の秘書、2016年より<a href="https://jbpress.co.jp">株式会社日本ビジネスプレス</a>にてアナリストとして活動。２０２１年より情報科学芸術大学院大学（IAMAS）にてメディア表現技術について学ぶ。在学中。</p>
+
+<h2>BOOKS</h2>
+<p><a href="https://www.amazon.co.jp/dp/4800712335/">共著「いちばんやさしい Googleアナリティクス 入門教室」</a><span class="ref">2019.04 ソーテック社</span></p>
+<p><a href="https://www.amazon.co.jp/dp/4839966567">共著「Googleオプティマイズによるウェブテストの教科書 ~A/Bテスト、リダイレクトテスト、多変量テストの実際~」</a><span class="ref">2018.11　マイナビ出版</span></p>
+
+<h2>WEBSITE CODING</h2>
+<p><a href="https://happyanalytics.co.jp">https://happyanalytics.co.jp</a><span class="ref">2021.07</span></p>
+<p><a href="https://y-steiner-kodomo.org">https://y-steiner-kodomo.org</a><span class="ref">2020.04</span></p>
+<p><a href="https://y-steiner-kodomo.org/hoikuen/">https://y-steiner-kodomo.org/hoikuen</a><span class="ref">2020.04</span></p>
+
+
+<h2>CONTACT</h2>
+<p><a href="mailto:kudo@marikudo.com">MAIL</a> | <a href="https://www.facebook.com/mari.kudo.jp">FACEBOOK</a> | <a href="https://twitter.com/kudo_mari">TWITTER</a> | <a href="https://github.com/marikd">GITHUB</a></p>
+<p></p>
+<br /><br /><br />
+
+  <div class="credit">
+    <p>Copyright ©  Mari Kudo ,All Rights Reserved.</p>
+  </div>
+
+<style>
+    :host { /*全体設定*/
+        display : block;
+        margin: 0;
+      }
+
+    h2{
+        font-size: 60%;
+        padding: 4rem 0rem 0rem 2rem;
+        letter-spacing: 5px;
+        line-height: 2;
+    }
+
+    p{
+        font-size: 90%;
+        padding: 1rem 2rem 1rem 3rem;
+        margin: 0;
+        line-height: 2;
+      }
+    .credit{ 
+      float: center;
+      text-align: center;
+      background: #444;
+      color: #fff;
+      font-size: 60%;
+      padding: 5rem 2rem;
+      }
+
+    a{
+     color: #444;
+     text-decoration: none;
+    }
+
+   a:hover{
+     color: #bbb;
+  }
+   .ref{ 
+      color: #bbb;
+      font-size: 60%;
+      padding-left: 1rem;
+      }
+</style>
+</body>
